@@ -7,7 +7,8 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   routes: routes,
-  mode: 'hash'
+  base: '/portfolio',
+  mode: 'history'
 })
 
 export const eventBus = new Vue();
